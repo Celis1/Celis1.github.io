@@ -1,0 +1,59 @@
+body {
+  background-color: #faf9f9;
+  margin:0;
+
+}
+p{
+  margin-top: 0;
+}
+
+hr {
+  border-top: 2px dashed #488b8f;
+
+}
+
+.link:hover {
+  font-size: 130%;
+}
+
+.header {
+  background-color: #5ea3a3;
+  height: 42px;
+  text-align: right;
+  border-bottom-style:solid;
+  border-width: 2px;
+
+}
+.header-text{
+  color: black;
+  font-size:1.8rem;
+  margin-right: 10px;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+
+}
+
+.header-text:hover{
+  color: red;
+}
+
+
+.footer{
+  background-color:#add2c9;
+  height: 100px;
+  border-style: dotted none none;
+  border-width: .7px;
+}
+
+.footer-text{
+  color: blue;
+
+}
+
+.work-pictures{
+
+  height: 100px;
+  width: 130px;
+  border-radius: 50%;
+}
