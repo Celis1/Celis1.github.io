@@ -18,19 +18,13 @@ hr {
 
 .header {
   background-color: #5ea3a3;
-  height: 42px;
-  text-align: right;
   border-bottom-style:solid;
   border-width: 2px;
-
+  position: relative;
+  
 }
 .header-text{
   color: black;
-  font-size:1.8rem;
-  margin-right: 10px;
-  text-decoration: none;
-  position: relative;
-  top: 4px;
 
 }
 
