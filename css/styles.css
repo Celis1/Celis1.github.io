@@ -21,7 +21,7 @@ hr {
   border-bottom-style:solid;
   border-width: 2px;
   position: relative;
-  
+
 }
 .header-text{
   color: black;
@@ -46,7 +46,6 @@ hr {
 }
 
 .work-pictures{
-
   height: 100px;
   width: 130px;
   border-radius: 50%;
