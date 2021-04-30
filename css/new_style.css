@@ -1,0 +1,33 @@
+.hidden {
+  display: block;
+  width: auto;
+  background-color: green;
+  color: red;
+  margin-bottom: 30px;
+}
+.welcom-header{
+  text-align: center;
+}
+.welcome-div {
+  display: inline-block;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  height: 100%;
+  width: 110%;
+  text-align:center;
+  color:red;
+}
+.navbar{
+  width: 100%;
+}
+.about-div{
+  /* text-align: center;
+  width:auto; */
+  /* display: inline-block; */
+}
+
+body{
+  /* background: linear-gradient(90deg, rgba(122,125,125,1) 16%, rgba(86,82,84,1) 100%); */
+
+  /* background-color:blue; */
+}

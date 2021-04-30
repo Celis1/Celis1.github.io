@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <!-- head -->
 
 <head>
@@ -11,13 +12,14 @@
   <!-- including the bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/test_card.css">
 </head>
 
 <!-- body -->
 
 <body>
-  <!-- creating the navbar  navbar-dark bg-dark  -->
-  <nav class="navbar navbar-dark bg-dark navbar-expand fixed-top"style="width:100%; heigh">
+  <!-- creating the navbar  -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand fixed-top" style="width:100%; heigh">
     <a class="navbar-brand" href=#top>Celis, Alex</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,18 +35,16 @@
   </nav>
   <a id='top' class="hidden" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Did you find me?</a>
 
-
-  <!-- welcom section -->
-  <div class="welcome-div bg-dark ">
+  <!-- welcome header -->
+  <div class="jumbotron bg-dark text-center no-margin">
     <h1 class="welcome-header">Welcome! Alpha 2.0</h1>
-
   </div>
 
-  <div id="About" class="section-div ">
+  <!-- about section -->
+  <div id="About" class="container-fluid text-center no-margin">
     <h1 id='some'>About me</h1>
     <p> say somethiong im giving up on you</p>
-
-    <p>
+    <p class="no-margin">
       erra, viverra quam eu, pulvinar velit. In sed purus molestie, dictum risus vel, consectetur metus. Maecenas tincidunt vehicula sodales. Integer id elit eget dolor egestas gravida sit amet sed diam. Integer convallis tortor
       eget odio vehicula pellentesque. Integer laoreet vulputate nunc, a pharetra dolor auctor sit amet. Praesent blandit placerat congue. Pellentesque placerat gravida dolor, eu eleifend diam porta non. Maecenas efficitur dui eget imperdiet dapibus.
       Aenean gravida id justo at feugiat. Cras ut magna consectetur, pretium risus id, mattis leo. In hac habitasse platea dictumst.
@@ -53,41 +53,41 @@
     </p>
   </div>
 
-
-
   <hr>
 
-  <div id="Info" class="section-div">
+  <!-- Info section -->
+  <div id="Info" class="container-fluid no-margin text-center">
     <h1>Work</h1>
     <p> say somethiong im giving up on you</p>
 
-    <!-- creating the container of the boxs of data -->
+    <!-- creating the table of programming content -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md shadow p-3 mb-5 bg-white rounded-top border border-dark ">
           <figure class="box-figure">
             <img src="Images/pi_logo.webp" alt="Trulli" class="box-image">
-            <figcaption class="box-caption">Languages</figcaption>
+            <figcaption class="box-caption">Languages and Frameworks</figcaption>
           </figure>
-          <p>one thing</p>
-          <p>Python,Javascript,Python,Javascript
-            ,Python,Javascript,Python,Javascript,
-            Python,Javascript,Python,Javascript,</p>
+          <h6>
+            Python,Kivy,Django,
+            Javascript,HTML,CSS,Bootstrap,
+            jQuery,
 
 
+          </h6>
         </div>
 
         <div class="col-md shadow p-3 mb-5 bg-white rounded-top border border-dark ">
           <figure class="box-figure">
             <img src="Images/pi_logo.webp" alt="Trulli" class="box-image">
-            <figcaption class="box-caption">Experience</figcaption>
+            <figcaption class="box-caption">Tools</figcaption>
           </figure>
 
-          <ul class="list-group list-group-flush" style="text-align:left;">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
+          <ul class="list-group list-group-flush" style="text-align:center;">
+            <li class="list-group-item">Linux</li>
+            <li class="list-group-item">Kivy</li>
+            <li class="list-group-item">Raspbery Pi</li>
+            <li class="list-group-item">Cura Ultimaker</li>
             <li class="list-group-item">And a fifth one</li>
           </ul>
 
@@ -96,21 +96,21 @@
         <div class="col-md shadow p-3 mb-5 bg-white rounded-top border border-dark ">
           <figure class="box-figure">
             <img src="Images/pi_logo.webp" alt="Trulli" class="box-image">
-            <figcaption class="box-caption">Specializations</figcaption>
+            <figcaption class="box-caption">Python Packages</figcaption>
           </figure>
-
-          <p>really some else</p>
-          <p>dunt ornare eros. Proin porta blandit lacus, at fermentum ligula sagittis placerat. Nulla sollicitudin libero eget ante tempus, et posuere sem eleifend.
-
-            Sed nisl orci, aliquam vitae congue et, ullamcorper ac tortor. Aenean ut lacus non dui imperdiet venenatis. Duis gravida nisl enim, ut tincidunt justo maximus eget. Nullam pulvinar eu est ac blandit. Mauris nec magna porttitor, malesuada
-            libero
-            ac, conie</p>
-
+          <p>numpy,pandas,sklearn,pytorch,kivy,
+            matplotlib,gpiozero,rpi.gpio,
+            scipy,pytorch,
+            Beautiful Soup,json,
+            -JQuery,p5.js,</p>
         </div>
       </div>
     </div>
-
-    <p>
+  </div>
+  <hr>
+  <div id="Projects" class="container-fluid no-margin">
+    <h1>Projects</h1>
+    <p class="no-margin">
       sto malesuada tincidunt. Ut cursus sodales mi, ac ornare nulla volutpat convallis. Donec a augue sed felis tristique volutpat. Maecenas lacinia suscipit lorem, et volutpat velit. Curabitur tincidunt mattis enim, quis lacinia velit feugiat ac.
       In ex velit, laoreet a lacus id, mattis malesuada quam.
 
@@ -123,119 +123,446 @@
       Donec tincidunt sed nunc id ultricies. Sed metus dui, scelerisque et velit in, scelerisque venenatis tortor. Integer id bibendum nibh. Curabitur ac faucibus arcu. In faucibus nibh id pulvinar iaculis. Donec molestie egestas mauris quis
       pharetra. Fusce ultricies neque ut enim pretium tincidunt. Ut porta ipsum est, eget congue nulla interdum var
     </p>
+    <!-- creating the cards of past projects -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- creating the first tile -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">BlockRunner</div>
 
-    <p>
-      sdvsd
-    </p>
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/TdCG6V8J89jUWpIuwm/giphy.gif" alt="Image 1">
+              </div>
+
+
+              <div class="container" style="padding-top:10px;">
+
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>Javascript, p5.js, HTML, CSS</p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>To learn how to use p5.js and make a game in Javascript</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Tile 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Color Tiles</div>
+
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/XdX4LBV14sC0c6VHD5/giphy.gif" alt="Image 1">
+              </div>
+
+
+              <div class="container" style="padding-top:10px;">
+
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>Python,Kivy</p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>Learn how to use Kivy, an open source python framework for crossplatform applications </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Custom voice box</div>
+
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/ceCpyqz1Iii4vRekko/giphy.gif" alt="Image 1">
+              </div>
+
+
+              <div class="container" style="padding-top:10px;">
+
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>Python</p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p> To become more familiar with scripting and raspberry pies </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Tile 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Lamp Flask Server</div>
+
+              <div class="banner-img">
+                <img src="Images/lamp_image.png" alt="Image 1">
+              </div>
+
+
+              <div class="container" style="padding-top:10px;">
+
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>Python, Flask, HTML, CSS, JavaScript, jQuery</p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+
+                  </div>
+                  <div class="col">
+                    <p>I wanted to control a lamp in my room remotely and also have option to of automation</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Tile 5 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Cardboard Login Terminal</div>
+
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/X8ouDcJxZTqZuHMC6F/giphy.gif" alt="Image 1">
+              </div>
+
+              <div class="container" style="padding-top:10px;">
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>Linux,Python</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>To understand the basics of multiple modules connected to a raspberry pi like the
+                      LCD display, Rfid card reader, and using leds and buzzers for user experience </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 6 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Kivy List app</div>
+
+              <div class="banner-img">
+                <img src="Images/touch_pi_kivyapp.png" alt="Image 1">
+              </div>
+
+              <div class="container" style="padding-top:10px;">
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>Linux,Python</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>To understand the basics of multiple modules connected to a raspberry pi like the
+                      LCD display, Rfid card reader, and using leds and buzzers for user experience </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 7 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Pi Car Simulation</div>
+
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/861RpHrSWZlKEWKl1U/giphy.gif" alt="Image 1">
+              </div>
+
+              <div class="container" style="padding-top:10px;">
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>Python,Kivy</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p> Creating a simulation in Kivy to be used with the simple raspberry pi robot </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 8 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Titanic Dataset</div>
+
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/de0kWPUrWuRGmWUlpm/giphy.gif" alt="Image 1">
+              </div>
+
+              <div class="container" style="padding-top:10px;">
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>Python, pandas, sklearn</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p> using common sklearn tools like logistic regression and random forest after cleaning the data</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 9 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Housing Dataset</div>
+
+              <div class="banner-img">
+                <img src="https://media.giphy.com/media/227F2cUt38yIilOv0a/giphy.gif" alt="Image 1">
+              </div>
+
+              <div class="container" style="padding-top:10px;">
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>Python, pandas, sklearn</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p> using common sklearn tools like logistic regression and random forest after cleaning the data</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 10 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="tile">
+            <div class="wrapper">
+              <div class="header">Reddit Scrape NLP</div>
+
+              <div class="banner-img">
+                <img src="Images/Reddit_scrape.png" alt="Image 1">
+              </div>
+
+              <div class="container" style="padding-top:10px;">
+                <div class="row">
+                  <div class="col">
+                    <strong>Laguages:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p>Python, pandas, sklearn</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <strong>Objective:</strong>
+                  </div>
+
+                  <div class="col">
+                    <p> Scraping reddit and using the data to train a NLPx </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tile-footer">
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
-
-  </div>
-
   <hr>
-
-  <div class="section-div">
-    <h1>Github Projects</h1>
-    <p>unt ornare eros. Proin porta blandit lacus, at fermentum ligula sagittis placerat. Nulla sollicitudin libero eget ante tempus, et posuere sem eleifend.
-
-      Sed nisl orci, aliquam vitae congue et, ullamcorper ac tortor. Aenean ut lacus non dui imperdiet venenatis. Duis gravida nisl enim, ut tincidunt justo maximus eget. Nullam pulvinar eu est ac blandit. Mauris nec magna porttitor, malesuada libero
-      ac, condimentum mauris. Ut congue congue ligula ac accumsan. Phasellus pellentesque sem at magna imperdiet, sit amet sodales nibh elementum. Nulla dictum lacus justo, eu mattis nibh molestie at. Nullam sapien odio, accumsan sit amet est vel,
-      vehicula consequat augue.
-      Donec tincidunt sed nunc id ultricies. Sed metus dui, scelerisque et velit in, scelerisque venenatis tortor. Integer id bibendum nibh. Curabitur ac faucibus arcu. In faucibus nibh id pulvinar iaculis. Donec molestie egestas mauris quis
-      pharetra. Fusce ultricies </p>
-
-
-
-    <div class="container">
-      <div class="row" >
-
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10">
-          <div class="card border-primary mb-3" style="max-width: 18rem; background-image: url('Images/stocklife.jpeg');">
-            <div class="card-header">Header</div>
-            <div class="card-body text-primary">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
-          <div class="card border-secondary mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-            <div class="card-header">Header</div>
-            <div class="card-body text-secondary">
-              <h5 class="card-title">Secondary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-          <div class="card border-success mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-            <div class="card-header">Header</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">Success card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-          <div class="card border-danger mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-            <div class="card-header">Header</div>
-            <div class="card-body text-danger">
-              <h5 class="card-title">Danger card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-      <div class="card border-warning mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-        <div class="card-header">Header</div>
-        <div class="card-body text-warning">
-          <h5 class="card-title">Warning card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-      <div class="card border-info mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-        <div class="card-header">Header</div>
-        <div class="card-body text-info">
-          <h5 class="card-title">Info card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-      <div class="card border-light mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h5 class="card-title">Light card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-      <div class="card border-dark mb-3" style="max-width: 18rem;background-image: url('Images/stocklife.jpeg');">
-        <div class="card-header">Header</div>
-        <div class="card-body text-dark">
-          <h5 class="card-title">Dark card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-    </div>
-
-  </div>
-
-
-  <div id="footer" class="container-fluid bg-dark info">
+  <div id="footer" class="container-fluid bg-dark text-center no-margin">
 
     <div class="row">
       <div class="col">
@@ -250,24 +577,9 @@
     </div>
 
   </div>
-
-
-
 </body>
 
-
-<footer>
-  <!-- in case -->
-  <!-- <script src="js/scripts.js"></script> -->
-
-  <!-- stray script that loads the top of the web page on load-->
-  <!-- <script>
-  window.onbeforeunload = function () {
-          window.scrollTo(0,0);
-  };
-</script> -->
-
-</footer>
+</html>
 
 
 </html>
