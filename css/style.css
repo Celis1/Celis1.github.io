@@ -14,16 +14,28 @@
   width: 10%;
 }
 
-.card-body{
-  background-image: url('Images/stocklife.jpeg');object-position: -30px,-30%;
-  background-color:#cccccc;
+.welcome-header{
+  font-family: 'Krona One', sans-serif;
+  color: #a3aaad;
+  font-size:2em;
 }
 
+.section-header{
+  color: #dadbce;
+  font-family: 'Open Sans', sans-serif;
+}
+.profile-pic{
+  height: 150px;
+  float: left;
+}
+
+
 #About{
-  background-color: blue;
+  background-color: #2978b5;
+
 }
 #Info{
-  background-color:purple;
+  background-color: #8a288a;
 }
 #Projects{
   background-color:lightgray;
