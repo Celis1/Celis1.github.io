@@ -42,22 +42,31 @@
   color:#404040;
   font-size:1.4em;
 }
-.footer-text{
+.footer-logo-div{
 
 }
 .footer-logo{
-  width: 3%;
+  width: 50px;
   padding-top:1%;
   padding-bottom:1%;
-  margin-right:3%;
+  margin-right:20px;
+  transition: transform .2s; /* Animation */
+}
+
+.footer-logo:hover{
+  transform: scale(1.2);
+}
+.footer-links-div{
+  padding-left: 120px;
 }
 .footer-links{
   display: inline-block;
   /* margin-right:1%; */
-  padding-right: 1%;
-  padding-bottom:1%;
+  padding-right: 10px;
+  padding-bottom:10px;
   font-size:1.2em;
 }
+
 .footer-gap{
   display: inline-block;
   margin-right:1%;
@@ -65,6 +74,7 @@
   font-size:1.3em;
   padding-right: 10px;
 }
+
 
 /* colorizing each paragraph */
 #About p{
@@ -137,4 +147,21 @@ html{
 .profile-pic{
   width: 45%;
 }
+/* .footer-logo{
+  width: 30px;
+} */
+.footer-links{
+
+}
+
   }
+
+@media only screen and (max-width: 660px) {
+  .footer-links-div{
+padding-left: 0;
+  }
+  .footer-logo-div{
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
