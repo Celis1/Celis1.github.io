@@ -1,8 +1,8 @@
 .hidden {
   display: block;
   width: auto;
-  background-color: green;
-  color: red;
+  background-color: gray;
+  color: gray;
   margin-bottom: 3px;
 }
 
@@ -28,36 +28,97 @@
   width: 30%;
   float: left;
   margin-left:10%;
+  margin-right:10px;
 }
 .profile-text{
   padding:0 0 13%;
   margin: 0 20% 0;
   /* margin-right: 20%; */
-  padding-top:2%;
-  text-indent:40px
+  padding-top:0%;
+  text-indent:40px;
+
+}
+.project-text{
+  color:#404040;
+  font-size:1.4em;
+}
+.footer-text{
+
+}
+.footer-logo{
+  width: 3%;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin-right:3%;
+}
+.footer-links{
+  display: inline-block;
+  /* margin-right:1%; */
+  padding-right: 1%;
+  padding-bottom:1%;
+  font-size:1.2em;
+}
+.footer-gap{
+  display: inline-block;
+  margin-right:1%;
+  margin-left:1%;
+  font-size:1.3em;
+  padding-right: 10px;
 }
 
+/* colorizing each paragraph */
+#About p{
+  color:#b5b5b5;
+  font-size:1.4em;
 
+}
+#Skills p{
+  color:#b5b5b5;
+  font-size:1.4em;
+}
+/* #Projects p{
+  color:red;footer-links
+  font-size:1.4em;
+} */
+
+
+/* referenced by ID */
 #About{
   background-color: #2978b5;
 
 }
-#Info{
-  background-color: #8a288a;
+#Skills{
+  background-color: #8a388a;
 }
 #Projects{
   background-color:lightgray;
 }
 
+
+p{
+/* color:blue; */
+}
+figcaption{
+  color:black;
+  text-decoration: underline;
+  font-size:1.2em;
+}
+
 h6{
   line-height:175%;
+  color:#4f4f4f;
+  font-size:1.2em;
+}
+li{
+  color:#4f4f4f;
+  font-size:1.2em;
 }
 hr{
   border-top: 2px solid #937e6c;
   margin:0px;
 }
 body{
-  background-color:green;
+  background-color:gray;
 }
 
 html{

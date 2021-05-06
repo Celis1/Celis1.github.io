@@ -1,5 +1,7 @@
 <!doctype html>
+
 <html lang="en">
+
 <!-- head -->
 
 <head>
@@ -14,7 +16,6 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -24,21 +25,30 @@
 <body>
 
   <!-- creating the navbar  -->
-  <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top" style="width:100%; heigh">
-    <a class="navbar-brand" href=#top>Alex Celis-Copelotti</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="#About">About <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#Skills">Skills</a>
-        <a class="nav-item nav-link" href="#Projects">Projects</a>
-        <a class="nav-item nav-link" href="">Contact</a>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">Hidden brand</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
   </nav>
+
   <a id='top' class="hidden" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Did you find me?</a>
 
   <!-- welcome header -->
@@ -48,51 +58,49 @@
 
   <!-- about section -->
   <div id="About" class="container-fluid  no-margin">
-    <h1 class="section-header text-center">About Me</h1>
+    <h1 id='abt-head' class="section-header text-center">About Me</h1>
 
 
-    <div class="container">
-      <img class="profile-pic" src="Images/Close_up_profile.JPG" alt="profile_picture">
-      <p class="no-margin profile-text">
+<div class="container" >
+  <img class="profile-pic" src="Images/Close_up_profile.JPG" alt="">
+  <p class="no-margin profile-text" >
 
-        Hi! I'm Alex Celis-Copelotti. I am a self taught python engineer who lives in Virginia.
-        I have been programming on and off again with different languages, until I found Python.
-        Python has been my life for the last couple years after I attended the datascience bootcamp
-        I started gaining an understanding for what It meant to be a coder but it wasn't until a couple
-        years after that I can now call myself a developer. My ultimate goal is to be programming
-        robotics with the latest deep reinforcement learning algorithms.
-
-      </p>
-    </div>
+      Hi! I'm Alex Celis-Copelotti. iverra quam eu, pulvinar velit. In sed purus molestie, dictum risus vel,
+       consectetur metus. Maecenas tin blandit placerat congue
+    . Pellentesque placepretium tincidunt. Ut porta ipsum est, eget congue nulla interdum var
+  </p>
+</div>
 
   </div>
 
   <hr>
 
-  <!-- Skills section -->
-  <div id="Skills" class="container-fluid no-margin text-center">
+  <!-- Info section -->
+  <div id="Info" class="container-fluid no-margin text-center">
     <h1 class="section-header">Skills</h1>
-    <p> I am a Data Scientist, Software Developer and a Full Stack Developer</p>
+    <p> These are the languages and Library that I use every day.</p>
 
     <!-- creating the table of programming content -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md shadow p-3 mb-5 bg-white rounded-top border border-dark ">
           <figure class="box-figure">
-            <img src="Images/framework.png" alt="framework_image" class="box-image" style="width:15%">
+            <img src="Images/pi_logo.webp" alt="Trulli" class="box-image">
             <figcaption class="box-caption">Languages and Frameworks</figcaption>
           </figure>
           <h6>
-            Python, Kivy, Flask, Django,
+            Python, Kivy, Django,
             Javascript, HTML, CSS, Bootstrap,
-            jQuery, P5.js
+            jQuery,
+
+
           </h6>
         </div>
 
         <div class="col-md shadow p-3 mb-5 bg-white rounded-top border border-dark ">
           <figure class="box-figure">
-            <img src="Images/settings.png" alt="setting_image" class="box-image" style="width:10%">
-            <figcaption class="box-caption">Common Tools</figcaption>
+            <img src="Images/pi_logo.webp" alt="Trulli" class="box-image">
+            <figcaption class="box-caption">Tools</figcaption>
           </figure>
 
           <ul class="list-group list-group-flush" style="text-align:center;">
@@ -100,29 +108,37 @@
             <li class="list-group-item">Kivy</li>
             <li class="list-group-item">Raspbery Pi</li>
             <li class="list-group-item">Cura Ultimaker</li>
+            <li class="list-group-item">And a fifth one</li>
           </ul>
 
         </div>
 
         <div class="col-md shadow p-3 mb-5 bg-white rounded-top border border-dark ">
           <figure class="box-figure">
-            <img src="Images/python_logo.jpeg" alt="python_logo" class="box-image" style="width:15%">
+            <img src="Images/pi_logo.webp" alt="Trulli" class="box-image">
             <figcaption class="box-caption">Python Packages</figcaption>
           </figure>
-          <h6>Numpy, Pandas, Sklearn, Pytorch, Kivy,
-            Matplotlib, Gpiozero, RPi.gpio,
-            Scipy, Seaborn, Beautiful Soup, Json
-          </h6>
-
+          <h6>numpy,pandas,sklearn,pytorch,kivy,
+            matplotlib,gpiozero,rpi.gpio,
+            scipy,pytorch,
+            Beautiful Soup,json,
+            -JQuery,p5.js,</h6>
         </div>
       </div>
     </div>
   </div>
   <hr>
-  <div id="Projects" class="container-fluid no-margin">
-    <h1 class="text-center" style="color:black;">Projects</h1>
-    <p class="text-center no-margin project-text">
-      Here are a few of the projects that I have spent time developing.
+  <div id="Projects" class="container-fluid no-margin ">
+    <h1 class="text-center">Projects</h1>
+    <p class="no-margin">
+      As a self taught programmer, in order for me to have proof of knowledge is with these projects
+      s. Proin porta blandit lacus, at fermentum ligula sagittis placerat. Nulla sollicitudin libero eget ante tempus, et posuere sem eleifend.
+
+      Sed nisl orci, aliquam vitae congue et, ullamcorper ac tortor. Aenean ut lacus non dui imperdiet venenatis. Duis gravida nisl enim, ut tincidunt justo maximus eget. Nullam pulvinar eu est ac blandit. Mauris nec magna porttitor, malesuada libero
+      ac, condimentum mauris. Ut congue congue ligula ac accumsan. Phasellus pellentesque sem at magna imperdiet, sit amet sodales nibh elementum. Nulla dictum lacus justo, eu mattis nibh molestie at. Nullam sapien odio, accumsan sit amet est vel,
+      vehicula consequat augue.
+      Donec tincidunt sed nunc id ultricies. Sed metus dui, scelerisque et velit in, scelerisque venenatis tortor. Integer id bibendum nibh. Curabitur ac faucibus arcu. In faucibus nibh id pulvinar iaculis. Donec molestie egestas mauris quis
+      pharetra. Fusce ultricies neque ut enim pretium tincidunt. Ut porta ipsum est, eget congue nulla interdum var
     </p>
     <!-- creating the cards of past projects -->
     <div class="container-fluid">
@@ -134,7 +150,7 @@
               <div class="header">BlockRunner</div>
 
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/TdCG6V8J89jUWpIuwm/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/TdCG6V8J89jUWpIuwm/giphy.gif" alt="Image 1">
               </div>
 
 
@@ -147,7 +163,7 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text">Javascript, p5.js, HTML, CSS</p>
+                    <p>Javascript, p5.js, HTML, CSS</p>
                   </div>
 
                 </div>
@@ -158,15 +174,15 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text">To learn how to use p5.js and make a game in Javascript</p>
+                    <p>To learn how to use p5.js and make a game in Javascript</p>
                   </div>
                 </div>
 
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -180,7 +196,7 @@
             <div class="wrapper">
               <div class="header">Color Tiles</div>
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/XdX4LBV14sC0c6VHD5/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/XdX4LBV14sC0c6VHD5/giphy.gif" alt="Image 1">
               </div>
               <div class="container" style="padding-top:10px;">
                 <div class="row">
@@ -188,7 +204,7 @@
                     <strong>Laguages:</strong>
                   </div>
                   <div class="col">
-                    <p class="tile-text">Python,Kivy</p>
+                    <p>Python,Kivy</p>
                   </div>
 
                 </div>
@@ -199,15 +215,15 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text">Learn how to use Kivy, an open source python framework for crossplatform applications </p>
+                    <p>Learn how to use Kivy, an open source python framework for crossplatform applications </p>
                   </div>
                 </div>
 
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -222,7 +238,7 @@
               <div class="header">Custom voice box</div>
 
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/ceCpyqz1Iii4vRekko/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/ceCpyqz1Iii4vRekko/giphy.gif" alt="Image 1">
               </div>
 
 
@@ -235,7 +251,7 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text">Python</p>
+                    <p>Python</p>
                   </div>
 
                 </div>
@@ -246,15 +262,15 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text"> To become more familiar with scripting and raspberry pies </p>
+                    <p> To become more familiar with scripting and raspberry pies </p>
                   </div>
                 </div>
 
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -269,7 +285,7 @@
               <div class="header">Lamp Flask Server</div>
 
               <div class="banner-img">
-                <img src="Images/lamp_image.png" alt="project_gif">
+                <img src="Images/lamp_image.png" alt="Image 1">
               </div>
 
 
@@ -282,7 +298,7 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text">Python, Flask, HTML, CSS, JavaScript, jQuery</p>
+                    <p>Python, Flask, HTML, CSS, JavaScript, jQuery</p>
                   </div>
 
                 </div>
@@ -293,15 +309,15 @@
 
                   </div>
                   <div class="col">
-                    <p class="tile-text">I wanted to control a lamp in my room remotely and also have option to of automation</p>
+                    <p>I wanted to control a lamp in my room remotely and also have option to of automation</p>
                   </div>
                 </div>
 
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -316,7 +332,7 @@
               <div class="header">Cardboard Login Terminal</div>
 
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/X8ouDcJxZTqZuHMC6F/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/X8ouDcJxZTqZuHMC6F/giphy.gif" alt="Image 1">
               </div>
 
               <div class="container" style="padding-top:10px;">
@@ -326,7 +342,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">Linux,Python</p>
+                    <p>Linux,Python</p>
                   </div>
                 </div>
 
@@ -336,15 +352,15 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">To understand the basics of multiple modules connected to a raspberry pi like the
+                    <p>To understand the basics of multiple modules connected to a raspberry pi like the
                       LCD display, Rfid card reader, and using leds and buzzers for user experience </p>
                   </div>
                 </div>
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -357,7 +373,7 @@
               <div class="header">Kivy List app</div>
 
               <div class="banner-img">
-                <img src="Images/touch_pi_kivyapp.png" alt="project_gif">
+                <img src="Images/touch_pi_kivyapp.png" alt="Image 1">
               </div>
 
               <div class="container" style="padding-top:10px;">
@@ -367,7 +383,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">Linux,Python</p>
+                    <p>Linux,Python</p>
                   </div>
                 </div>
 
@@ -377,15 +393,15 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">To understand the basics of multiple modules connected to a raspberry pi like the
+                    <p>To understand the basics of multiple modules connected to a raspberry pi like the
                       LCD display, Rfid card reader, and using leds and buzzers for user experience </p>
                   </div>
                 </div>
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -398,7 +414,7 @@
               <div class="header">Pi Car Simulation</div>
 
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/861RpHrSWZlKEWKl1U/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/861RpHrSWZlKEWKl1U/giphy.gif" alt="Image 1">
               </div>
 
               <div class="container" style="padding-top:10px;">
@@ -408,7 +424,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">Python,Kivy</p>
+                    <p>Python,Kivy</p>
                   </div>
                 </div>
 
@@ -418,14 +434,14 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text"> Creating a simulation in Kivy to be used with the simple raspberry pi robot </p>
+                    <p> Creating a simulation in Kivy to be used with the simple raspberry pi robot </p>
                   </div>
                 </div>
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -438,7 +454,7 @@
               <div class="header">Titanic Dataset</div>
 
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/de0kWPUrWuRGmWUlpm/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/de0kWPUrWuRGmWUlpm/giphy.gif" alt="Image 1">
               </div>
 
               <div class="container" style="padding-top:10px;">
@@ -448,7 +464,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">Python, pandas, sklearn</p>
+                    <p>Python, pandas, sklearn</p>
                   </div>
                 </div>
 
@@ -458,14 +474,14 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text"> using common sklearn tools like logistic regression and random forest after cleaning the data</p>
+                    <p> using common sklearn tools like logistic regression and random forest after cleaning the data</p>
                   </div>
                 </div>
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -478,7 +494,7 @@
               <div class="header">Housing Dataset</div>
 
               <div class="banner-img">
-                <img src="https://media.giphy.com/media/227F2cUt38yIilOv0a/giphy.gif" alt="project_gif">
+                <img src="https://media.giphy.com/media/227F2cUt38yIilOv0a/giphy.gif" alt="Image 1">
               </div>
 
               <div class="container" style="padding-top:10px;">
@@ -488,7 +504,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">Python, pandas, sklearn</p>
+                    <p>Python, pandas, sklearn</p>
                   </div>
                 </div>
 
@@ -498,14 +514,14 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text"> using common sklearn tools like logistic regression and random forest after cleaning the data</p>
+                    <p> using common sklearn tools like logistic regression and random forest after cleaning the data</p>
                   </div>
                 </div>
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -518,7 +534,7 @@
               <div class="header">Reddit Scrape NLP</div>
 
               <div class="banner-img">
-                <img src="Images/Reddit_scrape.png" alt="project_gif">
+                <img src="Images/Reddit_scrape.png" alt="Image 1">
               </div>
 
               <div class="container" style="padding-top:10px;">
@@ -528,7 +544,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text">Python, pandas, sklearn</p>
+                    <p>Python, pandas, sklearn</p>
                   </div>
                 </div>
 
@@ -538,14 +554,14 @@
                   </div>
 
                   <div class="col">
-                    <p class="tile-text"> Scraping reddit and using the data to train a NLPx </p>
+                    <p> Scraping reddit and using the data to train a NLPx </p>
                   </div>
                 </div>
               </div>
 
               <div class="tile-footer">
-                <a href="#" class=" btn2 btn-base">Github</a>
-
+                <a href="#" class="Cbtn Cbtn-primary btn1 btn-base">Github</a>
+                <a href="#" class="Cbtn Cbtn-danger btn2 btn-base">Source</a>
               </div>
             </div>
           </div>
@@ -559,43 +575,19 @@
   <hr>
   <div id="footer" class="container-fluid bg-dark text-center no-margin">
 
-    <div class="container-fluid">
-      <!-- first row of footer -->
-      <div class="row">
-        <div class="col">
-          <!-- <p>heyesodiflk</p> -->
-          <a href="https://www.instagram.com/cellybots/">
-            <img class="footer-logo" src="Images/instagram.png" alt="instagram_page">
-          </a>
-          <a href="https://github.com/Celis1?tab=repositories">
-            <img class="footer-logo" src="Images/github.png" alt="instagram_page">
-          </a>
-          <a href="https://www.linkedin.com/in/alex-celis-267b09172/">
-          <img class="footer-logo" src="Images/linkedin.png" alt="instagram_page">
-        </a>
-        </div>
-
+    <div class="row">
+      <div class="col">
+        <p class="footer-text"> desing by alex celis </p>
       </div>
-
-      <!-- footer row 2 -->
-      <div class="row">
-        <div class="col">
-          <!-- <p>heyesodiflk</p> -->
-          <a class="footer-links" href="#Skills">Skills</a>
-          <h4 class="footer-gap">|</h4>
-          <a class="footer-links" href="#Projects">Projects</a>
-          <h4 class="footer-gap">|</h4>
-          <a class="footer-links" href="">Contact</a>
-        </div>
-
+      <div class="col">
+        <p class="footer-text">else</p>
       </div>
-
-
-
-
+      <div class="col">
+        <p class="footer-text">else</p>
+      </div>
     </div>
 
-</body>
+  </div>
 
 
 <footer>
@@ -603,12 +595,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- inline script to close navbar -->
-  <script type="text/javascript">
-    $('.navbar-collapse').click(function() {
-      $(".navbar-collapse").collapse('hide');
-    });
-  </script>
 </footer>
+
+</body>
 
 </html>

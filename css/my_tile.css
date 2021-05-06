@@ -14,8 +14,8 @@
 	border-bottom:1px solid #ebeff2;
 	padding:19px 0;
 	text-align:center;
-	color:#59687f;
-	font-size:1.3em;
+	color:#465a7a;
+	font-size:1.4em;
 	position:relative;
 }
 
@@ -55,4 +55,10 @@
 	color: #FFF;
 }
 .btn2:hover{
-	background-color: #fd7676;}
+	background-color: #fd7676;
+}
+
+.tile-text{
+	color:black;
+	font-size:1em;
+}
