@@ -1,9 +1,10 @@
 .hidden {
   display: block;
   width: auto;
-  background-color: gray;
-  color: gray;
+  background-color: #414141;
+  color: #414141;
   margin-bottom: 3px;
+
 }
 
 .no-margin{
@@ -29,6 +30,8 @@
   float: left;
   margin-left:10%;
   margin-right:10px;
+  border-radius: 20px;
+
 }
 .profile-text{
   padding:0 0 6%;
@@ -38,6 +41,8 @@
   text-indent:40px;
 
 }
+
+
 .project-text{
   color:#404040;
   font-size:1.4em;
@@ -45,6 +50,7 @@
 .footer-logo-div{
 
 }
+
 .footer-logo{
   width: 50px;
   padding-top:1%;
@@ -119,26 +125,21 @@ h6{
   color:#4f4f4f;
   font-size:1.2em;
 }
-li{
-  color:#4f4f4f;
-  font-size:1.2em;
-}
+
 hr{
   border-top: 2px solid #937e6c;
   margin:0px;
 }
 body{
-  background-color:gray;
+  background-color: #414141;
 }
 
 html{
-  background-color: red;
+  background-color: #414141;
 }
 
 @media only screen and (max-width: 990px) {
-  html {
-    background-color: yellow;
-  }
+/* controling the profile picture in about */
 .profile-text{
   padding-bottom:2%;
   margin-left: 20%;
@@ -147,13 +148,6 @@ html{
 .profile-pic{
   width: 45%;
 }
-/* .footer-logo{
-  width: 30px;
-} */
-.footer-links{
-
-}
-
   }
 
 @media only screen and (max-width: 660px) {
@@ -164,5 +158,18 @@ padding-left: 0;
     padding-left: 0;
     padding-top: 7px;
     padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .profile-text{
+    text-align: center;
+    padding-bottom:2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-indent: 5px;
+  }
+  .profile-pic{
+    width: 80%;
   }
 }
