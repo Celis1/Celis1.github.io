@@ -3,7 +3,7 @@
   width: auto;
   background-color: #414141;
   color: #414141;
-  margin-bottom: 3px;
+  margin-bottom: 40px;
 
 }
 
@@ -15,6 +15,24 @@
   width: 10%;
 }
 
+
+.navbar-custom {
+  background-color: #414141;
+  border-color: #E7E7E7;
+}
+
+.center {
+  /* border: 5px solid #FFFF00; */
+  display: flex;
+  justify-content: center;
+  }
+/* 
+##############################################################################
+
+                                    Welcome
+
+##############################################################################  
+} */
 .welcome-header{
   font-family: 'Krona One', sans-serif;
   color: #a3aaad;
@@ -23,20 +41,28 @@
 
 .section-header{
   color: #dadbce;
+  
   font-family: 'Open Sans', sans-serif;
 }
 .profile-pic{
-  width: 30%;
-  float: left;
-  margin-left:10%;
-  margin-right:10px;
-  border-radius: 20px;
+  width: 18%;
+  /* float: left; */
+  /* margin-left:50%; */
+  /* center the image */
+  
+  /* margin-right:10px; */
+  margin-top:10px;
+  /* TODO- CHANGE THIS VALUE */
+  /* margin-top: 20px;  */
+  
+  object-fit:cover;
+  border-radius:50%;
 
 }
 .profile-text{
   padding:0 0 6%;
-  margin: 0 20% 0;
-  /* margin-right: 20%; */
+  margin: 0 10% 0;
+  margin-right: 20%;
   padding-top:0%;
   text-indent:40px;
 
@@ -81,11 +107,18 @@
   padding-right: 10px;
 }
 
+/* 
+##############################################################################
+
+                                    IDs
+
+##############################################################################  
+} */
 
 /* colorizing each paragraph */
 #About p{
-  color:#b5b5b5;
-  font-size:1.4em;
+  color:#FFF8F0;
+  font-size:1.7em;
 
 }
 #Skills p{
@@ -100,14 +133,14 @@
 
 /* referenced by ID */
 #About{
-  background-color: #2978b5;
+  background-color: #B6A99A;
 
 }
 #Skills{
-  background-color: #8a388a;
+  background-color: #FFCEB2;
 }
 #Projects{
-  background-color:lightgray;
+  background-color:#FFB3A7;
 }
 
 
@@ -146,7 +179,7 @@ html{
   margin-right: 10%;
 }
 .profile-pic{
-  width: 45%;
+  width: 35%;
 }
   }
 
