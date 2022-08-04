@@ -62,8 +62,8 @@
 .profile-text{
   padding:0 0 6%;
   margin: 0 10% 0;
-  margin-right: 20%;
-  padding-top:0%;
+  /* margin-right: 10%; */
+  padding-top:1%;
   text-indent:40px;
 
 }
@@ -73,9 +73,23 @@
   color:#404040;
   font-size:1.4em;
 }
-.footer-logo-div{
 
+.fill-back{
+  background-color: #EEDAC1;
+  line-height: 10%;
 }
+.shrink-width{
+
+  
+}
+
+/* 
+##############################################################################
+
+                                    Footer
+
+##############################################################################  
+} */
 
 .footer-logo{
   width: 50px;
@@ -137,10 +151,10 @@
 
 }
 #Skills{
-  background-color: #FFCEB2;
+  background-color: #EEDAC1;
 }
 #Projects{
-  background-color:#FFB3A7;
+  background-color:#402E32;
 }
 
 
@@ -179,7 +193,7 @@ html{
   margin-right: 10%;
 }
 .profile-pic{
-  width: 35%;
+  width: 18%;
 }
   }
 
@@ -204,5 +218,6 @@ padding-left: 0;
   }
   .profile-pic{
     width: 80%;
+    height: 80%;
   }
 }
