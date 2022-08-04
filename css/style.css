@@ -40,7 +40,7 @@
 }
 
 .section-header{
-  color: #dadbce;
+  color: black;
   
   font-family: 'Open Sans', sans-serif;
 }
@@ -75,14 +75,15 @@
 }
 
 .fill-back{
-  background-color: #EEDAC1;
-  line-height: 10%;
+  opacity: 1;
 }
-.shrink-width{
+.shrink-left{
 
-  
+  margin-left:15%; 
 }
-
+.shrink-right{
+  margin-right:15%;
+}
 /* 
 ##############################################################################
 
@@ -131,12 +132,12 @@
 
 /* colorizing each paragraph */
 #About p{
-  color:#FFF8F0;
+  color:black;
   font-size:1.7em;
 
 }
 #Skills p{
-  color:#b5b5b5;
+  color:black;
   font-size:1.4em;
 }
 /* #Projects p{
@@ -147,16 +148,22 @@
 
 /* referenced by ID */
 #About{
-  background-color: #B6A99A;
+
+  background-image: linear-gradient(175deg, #ede3d9 0%, #EEDAC1 90%);
 
 }
+
 #Skills{
-  background-color: #EEDAC1;
-}
-#Projects{
-  background-color:#402E32;
+  background: rgb(238,218,193);
+  background: linear-gradient(180deg, rgba(238,218,193,.989) 11%, rgba(191,195,189,0.89) 57%, rgba(167,183,188,0.87) 79%, rgba(138,166,186,1) 97%);
+
 }
 
+#Projects{
+ 
+
+  background: rgb(134,166,186);
+  background: linear-gradient(177deg, rgba(134,166,186,.99) 11%, rgba(116,152,184,0.8225884103641457) 13%, rgba(131,132,176,0.9122242647058824) 39%, rgba(144,132,174,0.8898153011204482) 56%, rgba(146,118,169,0.929030987394958) 98%);}
 
 p{
 /* color:blue; */
@@ -220,4 +227,13 @@ padding-left: 0;
     width: 80%;
     height: 80%;
   }
+.shrink-left{
+  margin-left:0%;
+}
+
+  .shrink-right{
+    margin-right:0%;
+  }
+
+  
 }
