@@ -29,6 +29,7 @@ border: 1px solid black;
 	margin-top:13px;
 	border: 3px ridge;
 	border-radius: 15px;
+	
 }
 
 .card-text{
@@ -43,6 +44,10 @@ border: 1px solid black;
 }
 .card-img-top{
 	padding:0 5px 0 5px;
+	height: 90%;
+	width: 80%;
+	object-fit: cover;
+	justify-content: center;
 	/* max-height:400px; */
 }
 
