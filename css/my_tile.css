@@ -1,49 +1,51 @@
-.btn1{
-  background-color: #E5A45B;
-  color: #FFF;
+.btn1 {
+	background-color: #E5A45B;
+	color: #FFF;
 	border-radius: 15px;
-border: 1px solid black;
+	border: 1px solid black;
 
 
 	position: absolute;
-        bottom: 10px;
-        left: 10px;
+	bottom: 10px;
+	left: 10px;
 }
 
-.btn1:hover{
+.btn1:hover {
 	background-color: #7dbef5;
 }
 
-.tile-text{
-	color:black;
-	font-size:1em;
+.tile-text {
+	color: black;
+	font-size: 1em;
 }
 
-.card-title{
-	color:black;
-	text-align:center;
-	padding-top:10px;
+.card-title {
+	color: black;
+	text-align: center;
+	padding-top: 10px;
 
 }
-.card{
-	margin-top:13px;
+
+.card {
+	margin-top: 13px;
 	border: 3px ridge;
 	border-radius: 15px;
-	
+
 }
 
-.card-text{
+.card-text {
 	padding-bottom: 20px;
 	/* text-indent:10px; */
-	text-align:center;
-  color:#404040;
-  font-size:.96em;
-  line-height: 1.5em;
-  font-weight: bold;
+	text-align: center;
+	color: #404040;
+	font-size: .96em;
+	line-height: 1.5em;
+	font-weight: bold;
 
 }
-.card-img-top{
-	padding:0 5px 0 5px;
+
+.card-img-top {
+	padding: 0 5px 0 5px;
 	height: 90%;
 	width: 80%;
 	object-fit: cover;
@@ -51,6 +53,6 @@ border: 1px solid black;
 	/* max-height:400px; */
 }
 
-.card strong{
+.card strong {
 	padding-left: 10px;
 }
