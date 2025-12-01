@@ -1,598 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!-- head -->
-
 <head>
-  <meta charset="utf-8">
-  <title>Alex Celis's Portfolio Page</title>
-  <link rel="icon" href="Images/main_favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- including the bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/my_tile.css">
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Alex Celis-Copelotti | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
-
-<!-- body -->
-
 <body>
 
-  <!-- creating the navbar  -->
-  <nav class="navbar navbar-dark  navbar-expand-sm fixed-top navbar-custom" style="width:100%;">
-    <a class="navbar-brand" href=#top>Alex Celis-Copelotti</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- ================= NAVBAR ONLY ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <!-- Toggler for mobile -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="#About">About <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#Skills">Skills</a>
-        <a class="nav-item nav-link" href="#Projects">Projects</a>
-        <a class="nav-item nav-link" href="#footer">Contact</a>
-      </div>
-    </div>
-  </nav>
-  <a id='top' class="hidden" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video of rogue AI </a>
-
-
-  <!-- about section -->
-  <div id="About" class="container-fluid  no-margin">
-    <div class="container center">
-      <img class="profile-pic" src="Images/Close_up_profile.JPG" alt="profile_picture">
-    </div>
-    <div class="container center">
-
-
-
-      <p class="profile-text center">
-        Welcome! My name is Alex Celis, and I am a professional Software Developer in Northern Virginia.
-        I started basic programming in high school with java. Once I discovered Python and its quick prototyping
-        capabilities, I began building projects from a broad set of categories in computer science.
-
-      </p>
-
-
-
-
-    </div>
-
-  </div>
-
-
-
-  <!-- Skills section -->
-  <div id="Skills" class="container-fluid no-margin text-center">
-    <h1 class="section-header">Skills</h1>
-
-
-    <!-- creating the table of programming content -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md shadow p-3 mb-5 shrink-left ">
-          <figure class="box-figure">
-            <img src="Images/framework.png" alt="framework_image" class="box-image" style="width:15%">
-            <figcaption class="box-caption">Languages and Frameworks</figcaption>
-          </figure>
-          <h6>
-            Python, Javascript, HTML, CSS, Selenium, Flask,
-            Kivy, Tkinter, Bootstrap, jQuery
-          </h6>
-        </div>
-
-        <div class="col-md shadow p-3 mb-5 >
-          <figure class=" box-figure">
-          <img src="Images/settings.png" alt="setting_image" class="box-image" style="width:10%">
-          <figcaption class="box-caption">Common Tools</figcaption>
-          </figure>
-
-          <li class="list-group fill-back">
-            <h6>Linux</h6>
-          </li>
-
-          <li class="list-group fill-back">
-            <h6>AWS</h6>
-          </li>
-
-          <li class="list-group fill-back">
-            <h6>GitHub</h6>
-          </li>
-
-
-          <li class="list-group fill-back">
-            <h6>Visual Studio</h6>
-          </li>
-
-
-
-        </div>
-
-        <div class="col-md shadow p-3 mb-5 shrink-right">
-          <figure class="box-figure">
-            <img src="Images/python_logo.png" alt="python_logo" class="box-image" style="width:15%">
-            <figcaption class="box-caption">Python Packages</figcaption>
-          </figure>
-          <h6>
-            Numpy, Pandas, OpenCV, Sklearn, Pytorch, TensorFlow,
-            Matplotlib, Seaborn, RPi.gpio, Json, pickle,
-            socket, requests
-          </h6>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="Projects" class="container-fluid no-margin">
-    <h1 class="text-center" style="color:black;">Projects</h1>
-
-
-    <div class="card-deck">
-      <!-- creating the cards of past projects -->
-
-      <!-- Card 1 -->
-      <div class="card">
-        <h5 class="card-title">Face Detection</h5>
-
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/CFlNRsUCWFW4txDAU4/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
+            <!-- Centered page links -->
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <ul class="navbar-nav nav-pills gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col">
-              <p class="tile-text">Python, OpenCV </p>
-            </div>
-          </div>
-
-          <p class="card-text"> Face detection with Haar-cascade classifier and OpenCV. My python script places bounding
-            boxes around the faces and eyes of people in the frame. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
         </div>
-      </div>
-
-
-      <!-- Card 2-->
-      <div class="card">
-        <h5 class="card-title">Pi Car </h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/HfVYPisgObJobbVx9n/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, gpiozero </p>
-            </div>
-          </div>
-
-          <p class="card-text"> A Raspberry Pi car with infrared and ultrasonic sensors, two motors, a
-            buzzer, and a frame built with popsicle sticks. I used python to make a bot that reads sensor data and make
-            a decions based on its envoirnment</p>
-          <a href="https://github.com/Celis1/Pi-robot-app" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-none">
-        <!-- wrap every 2 on normal and medium-->
-      </div>
-
-
-      <!-- Card 3 -->
-      <div class="card">
-        <h5 class="card-title">Boston Housing Dataset </h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/227F2cUt38yIilOv0a/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Pandas, Sklearn, Scipy, Matplotlib, Seaborn </p>
-            </div>
-          </div>
-
-          <p class="card-text"> Predicting housing prices on the Boston housing dataset. This project also has data
-            analysis and data visualization of the more significant attributes. </p>
-          <a href="https://github.com/Celis1/MachineLearning" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-none d-md-none d-lg-block">
-        <!-- wrap every 3 on large-->
-      </div>
-
-      <!-- Card 4 -->
-      <div class="card">
-        <h5 class="card-title">Cardboard Pi Terminal </h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/X8ouDcJxZTqZuHMC6F/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, RPi.GPIO </p>
-            </div>
-          </div>
-
-          <p class="card-text"> A cardboard terminal with a raspberry pi computer. The Hardware consists of LEDs, an
-            RFID tag reader, and a 16x16 LCD screen. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-none">
-        <!-- wrap every 2 on normal and medium-->
-      </div>
-
-
-      <!-- Card 5-->
-      <div class="card">
-        <h5 class="card-title">Kivy Car Simulation</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/861RpHrSWZlKEWKl1U/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Kivy</p>
-            </div>
-          </div>
-
-          <p class="card-text"> 2D Car simulation App built with Kivy. This app was made to be
-            my own environment for testing reinforment models. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="card">
-        <h5 class="card-title">Block Runner</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/TdCG6V8J89jUWpIuwm/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Javascript, CSS, p5.js </p>
-            </div>
-          </div>
-
-          <p class="card-text"> A Block game that I built to solidify my understanding of JavaScript. I used the
-            P5.js library to control most of the visuals and interactions of the web game. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-block">
-        <!-- lucky number 6 wraps on all sizes-->
-      </div>
-
-
-      <!-- Card 7-->
-      <div class="card">
-        <h5 class="card-title">Tile Runway</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/XdX4LBV14sC0c6VHD5/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Kivy </p>
-            </div>
-          </div>
-
-          <p class="card-text"> Fully functional Kivy App for kids. As the colored blocks come down the screen, you have
-            to click the corresponding color's button
-            before it passes the screen or you lose a life. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="card">
-        <h5 class="card-title">Art Generator</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/DpEhxdKHbxiqaiL2p3/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, TensorFlow</p>
-            </div>
-          </div>
-
-          <p class="card-text"> Neural style transfer using TensorFlows pre-trained vgg19 model. I used transfer
-            learning to modify an image into the art style of another image.</p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-none">
-        <!-- wrap every 2 on normal and medium-->
-      </div>
-
-
-      <!-- Card 9 -->
-      <div class="card">
-        <h5 class="card-title">Flask Lamp Server</h5>
-        <div class="container center">
-          <img class="card-img-top" src="Images/lamp_image.png" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Flask, HTML, CSS, JavaScript </p>
-            </div>
-          </div>
-
-          <p class="card-text"> A Flask server on a raspberry pi that controls a relay module. From my website, this
-            lamp could be turned on or off from anywhere in the world. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-
-        </div>
-      </div>
-
-      <div class="w-100 d-none d-md-none d-lg-block">
-        <!-- wrap every 3 on large-->
-      </div>
-
-      <!-- Card 10 -->
-      <div class="card">
-        <h5 class="card-title">Reddit Scrape NLP</h5>
-        <div class="container center">
-          <img class="card-img-top" src="Images/Reddit_scrape.png" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Pandas, requests, Sklearn </p>
-            </div>
-          </div>
-
-          <p class="card-text"> Making requests to Reddit API and downloading their data. I then use machine
-            learning to determine if a post belongs to one of my catagories. </p>
-          <a href="https://github.com/Celis1/MachineLearning" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-none">
-        <!-- wrap every 2 on normal and medium-->
-      </div>
-
-
-      <!-- Card 11 -->
-      <div class="card">
-        <h5 class="card-title">Music Generator LSTM</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/D0w07jJ9PHEIsSn4R5/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, TensorFlow </p>
-            </div>
-          </div>
-
-          <p class="card-text"> Music generation using recurrent neural networks and TensorFlow's LSTM layers. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <!-- 12 -->
-      <div class="card">
-        <h5 class="card-title">Kivy List App</h5>
-        <div class="container center">
-          <img class="card-img-top" src="Images/touch_pi_kivyapp.png" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Kivy</p>
-            </div>
-          </div>
-
-          <p class="card-text"> This is one of the first apps I made when I was learning Kivy.
-            I learned the basics of page layouts and functionality design for a GUI. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-block">
-        <!-- lucky number 12 wraps on all sizes-->
-      </div>
-
-      <!-- Card 13 -->
-      <div class="card">
-        <h5 class="card-title">Titanic Dataset</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/de0kWPUrWuRGmWUlpm/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, Pandas, Matplotlib, Seaborn, Sklearn</p>
-            </div>
-          </div>
-
-          <p class="card-text"> This is the first dataset I ever worked on. I learned common practices for data cleaning
-            and data
-            visualization. I then trained a logistic regression model to determine if a passenger would survive or not
-            given their information. </p>
-          <a href="https://github.com/Celis1/MachineLearning" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <!-- Creating Card 14 -->
-      <div class="card">
-        <h5 class="card-title">Minecraft Color Detection</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/iCeR4EwBteSOu1swYt/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python, OpenCV </p>
-            </div>
-          </div>
-
-          <p class="card-text"> OpenCV Color detection that I used to help find one of the more valuable resources in
-            Minecraft. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-      <div class="w-100 d-block d-md-block d-lg-none">
-        <!-- wrap every 2 on normal and medium-->
-      </div>
-
-      <!-- Creating Card 15 -->
-      <div class="card">
-        <h5 class="card-title">Custom Voice Box</h5>
-        <div class="container center">
-          <img class="card-img-top" src="https://media.giphy.com/media/ceCpyqz1Iii4vRekko/giphy.gif" alt="">
-        </div>
-
-        <div class="card-body">
-          <div class="row">
-            <div class="col">
-              <strong>Dependencies:</strong>
-            </div>
-            <div class="col">
-              <p class="tile-text">Python</p>
-            </div>
-          </div>
-
-          <p class="card-text"> This is a gift I made which is a raspberry pi and a Pi hat speaker. This furry friend
-            will feed a custom line every couple of seconds after plugging it into a power source. </p>
-          <a href="https://github.com/Celis1?tab=repositories" class="btn btn1 ">GitHub Page</a>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  </div>
-
-  <hr>
-  <div id="footer" class="container-fluid bg-dark text-center no-margin">
-
-    <div class="container-fluid">
-      <!-- first row of footer -->
-      <div class="row">
-        <div class="col">
-          <div class="footer-logo-div">
-            <a href="https://www.instagram.com/cellybots/">
-              <img class="footer-logo" src="Images/instagram.png" alt="instagram_link">
-            </a>
-            <a href="https://github.com/Celis1?tab=repositories">
-              <img class="footer-logo" src="Images/github.png" alt="github_link">
-            </a>
-            <a href="https://www.linkedin.com/in/alexcelis/">
-              <img class="footer-logo" src="Images/linkedin.png" alt="linkedin_link">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- footer row 2 -->
-      <div class="row">
-        <div class="col">
-          <div class="footer-links-div">
-            <a class="footer-links" href="#Skills">@CellyBots</a>
-            <h4 class="footer-gap">|</h4>
-            <a class="footer-links" href="#Projects">Celis1</a>
-            <h4 class="footer-gap">|</h4>
-            <a class="footer-links" href="">Alexcopelotti@gmail.com</a>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-    </div>
-
+    </nav>
+
+    <!-- We’ll add page content later -->
+
+    <!-- Bootstrap JS bundle -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="javascript/main.js"></script>
 </body>
-
-
-<footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-  <!-- inline script to close navbar -->
-  <script type="text/javascript">
-    $('.navbar-collapse').click(function () {
-      $(".navbar-collapse").collapse('hide');
-    });
-  </script>
-</footer>
-
 </html>
