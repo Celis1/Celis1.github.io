@@ -2,10 +2,12 @@
 
 .hero-section {
     position: relative;
-    min-height: calc(100vh - 64px);
+    min-height: calc(100vh - 0px);
     display: flex;
     align-items: stretch;
     justify-content: center;
+
+    padding-top: 80px; /* adjust to your navbar height */
 
     background-image:
         linear-gradient(
@@ -30,7 +32,6 @@
 }
 
 /* LEFT HALF – big name */
-
 .hero-left {
     flex: 1;
     display: flex;
@@ -88,8 +89,6 @@
     line-height: 1.35;
     color: #e5e7eb;
 }
-
-
 
 .hero-role span {
     display: block;

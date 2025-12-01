@@ -10,12 +10,35 @@ body {
 
 /* Navbar styling */
 .custom-navbar {
-    background: rgba(3, 7, 18, 0.92); /* deep dark with slight transparency */
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+
+    transition:
+        background-color 0.2s ease-out,
+        border-color 0.2s ease-out,
+        backdrop-filter 0.2s ease-out,
+        box-shadow 0.2s ease-out;
 }
 
-/* Navbar links: modern pill look */
+.custom-navbar.navbar-scrolled {
+    background: rgba(3, 7, 18, 0.96);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.65);
+}
+
+
+
+
+/* Navbar links */
 .custom-navbar .nav-link {
     position: relative;
     padding-inline: 1.1rem;

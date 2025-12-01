@@ -1,0 +1,51 @@
+.page-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 4rem 1.5rem;
+}
+
+.about-section {
+    background: radial-gradient(circle at top, #020617 0, #020617 40%, #000000 100%);
+    color: #e5e7eb;
+}
+
+.about-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-heading {
+    font-size: 1.3rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.about-body {
+    font-size: 0.98rem;
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .page-section {
+        padding: 3rem 1.25rem;
+        align-items: flex-start;
+    }
+
+    .about-heading {
+        text-align: center;
+    }
+
+    .about-inner {
+        text-align: left;
+    }
+}
