@@ -2,12 +2,11 @@
 
 .hero-section {
     position: relative;
-    min-height: calc(100vh - 64px); /* under navbar */
+    min-height: calc(100vh - 64px);
     display: flex;
     align-items: stretch;
     justify-content: center;
 
-    /* Full background image + gradient darker on the left */
     background-image:
         linear-gradient(
             to right,
@@ -31,6 +30,7 @@
 }
 
 /* LEFT HALF – big name */
+
 .hero-left {
     flex: 1;
     display: flex;
@@ -52,7 +52,8 @@
         0 0 32px rgba(15, 23, 42, 0.9);
 }
 
-/* RIGHT HALF – smaller centered role/tagline */
+/* RIGHT HALF – role block */
+
 .hero-right {
     flex: 1;
     display: flex;
@@ -61,22 +62,37 @@
     padding: 3rem 2rem;
 }
 
-.hero-main-text {
-    max-width: 420px;
+.hero-role-block {
+    max-width: 460px;
+    text-align: left;
+}
+
+.hero-role-label {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 14px rgba(248, 250, 252, 0.9);
 }
 
 .hero-role {
-    font-size: 0.95rem;
-    letter-spacing: 0.28em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #9ca3af;
-    margin-bottom: 0.75rem;
+    line-height: 1.35;
+    color: #e5e7eb;
 }
 
-.hero-tagline {
-    font-size: 0.98rem;
-    color: #e5e7eb;
-    opacity: 0.9;
+
+
+.hero-role span {
+    display: block;
 }
 
 
@@ -104,16 +120,17 @@
         font-size: clamp(2.1rem, 8vw, 3rem);
     }
 
-    .hero-main-text {
-        max-width: 100%;
+    .hero-role-block {
+        text-align: center;
+    }
+
+    .hero-role-label {
+        font-size: 2.2rem;
     }
 
     .hero-role {
-        font-size: 0.9rem;
-    }
-
-    .hero-tagline {
-        font-size: 0.95rem;
+        font-size: 2.1rem;
+        line-height: 1.4;
     }
 }
 
