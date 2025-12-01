@@ -1,0 +1,119 @@
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+    position: relative;
+    min-height: calc(100vh - 64px); /* under navbar */
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    /* Full background image + gradient darker on the left */
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.96) 0%,
+            rgba(0, 0, 0, 0.85) 35%,
+            rgba(3, 7, 18, 0.55) 65%,
+            rgba(15, 23, 42, 0.25) 100%
+        ),
+        url("../images/profile_img.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #e5e7eb;
+}
+
+.hero-inner {
+    display: flex;
+    flex: 1;
+}
+
+/* LEFT HALF – big name */
+.hero-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2.5rem;
+    text-align: left;
+}
+
+.hero-name-large {
+    font-size: clamp(3.4rem, 7vw, 6rem);
+    line-height: 1.5;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    max-width: 10ch;
+    color: #f9fafb;
+    text-shadow:
+        0 0 18px rgba(0, 0, 0, 0.9),
+        0 0 32px rgba(15, 23, 42, 0.9);
+}
+
+/* RIGHT HALF – smaller centered role/tagline */
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.hero-main-text {
+    max-width: 420px;
+}
+
+.hero-role {
+    font-size: 0.95rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 0.75rem;
+}
+
+.hero-tagline {
+    font-size: 0.98rem;
+    color: #e5e7eb;
+    opacity: 0.9;
+}
+
+
+/* ========== Basic responsiveness ========== */
+
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+    }
+
+    .hero-left,
+    .hero-right {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .hero-name-large {
+        max-width: none;
+        letter-spacing: 0.16em;
+        font-size: clamp(2.1rem, 8vw, 3rem);
+    }
+
+    .hero-main-text {
+        max-width: 100%;
+    }
+
+    .hero-role {
+        font-size: 0.9rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+    }
+}
+
