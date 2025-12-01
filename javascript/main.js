@@ -1,23 +1,54 @@
-// navbar fading logic
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".custom-navbar");
-    const hero = document.querySelector("#hero");
-    if (!navbar || !hero) return;
+    const navLinks = document.querySelectorAll(".custom-navbar .nav-link");
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            const entry = entries[0];
-            if (entry.isIntersecting) {
+    const sections = Array.from(document.querySelectorAll("section[id]"));
+    const homeLink = document.querySelector('.custom-navbar .nav-link[href="index.html"]');
+
+    const sectionLinkMap = {};
+    sections.forEach((section) => {
+        const id = section.id;
+        const link = document.querySelector(`.custom-navbar .nav-link[href="#${id}"]`);
+        if (link) {
+            sectionLinkMap[id] = link;
+        }
+    });
+
+    function updateOnScroll() {
+        let currentId = "hero";
+        const threshold = window.innerHeight * 0.3;
+
+        for (const section of sections) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= threshold && rect.bottom >= threshold) {
+                currentId = section.id;
+                break;
+            }
+        }
+
+        navLinks.forEach((link) => link.classList.remove("active"));
+
+        if (currentId === "hero") {
+            if (homeLink) {
+                homeLink.classList.add("active");
+            }
+        } else {
+            const activeLink = sectionLinkMap[currentId];
+            if (activeLink) {
+                activeLink.classList.add("active");
+            }
+        }
+
+        if (navbar) {
+            if (currentId === "hero") {
                 navbar.classList.remove("navbar-scrolled");
             } else {
                 navbar.classList.add("navbar-scrolled");
             }
-        },
-        {
-            root: null,
-            threshold: 0.4
         }
-    );
+    }
 
-    observer.observe(hero);
+    updateOnScroll();
+    window.addEventListener("scroll", updateOnScroll);
+    window.addEventListener("resize", updateOnScroll);
 });
