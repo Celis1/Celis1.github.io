@@ -34,7 +34,7 @@
 }
 
 .about-heading {
-    font-size: 1.3rem;
+    font-size: 2rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     margin-bottom: 1.4rem;
@@ -79,32 +79,6 @@
 }
 
 
-.about-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1.8rem auto 0; /* centers horizontally */
-    padding: 0.65rem 1.6rem;
-    border-radius: 999px;
-    border: none;
-    font-size: 0.9rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: linear-gradient(135deg, #38bdf8, #a855f7);
-    color: #0b1120;
-    box-shadow: 0 0 18px rgba(56, 189, 248, 0.55);
-    transition:
-        transform 0.15s ease-out,
-        box-shadow 0.15s ease-out,
-        opacity 0.15s ease-out;
-}
-
-.about-button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 0 24px rgba(56, 189, 248, 0.7);
-    opacity: 0.96;
-}
 
 
 /* Responsive */
@@ -119,9 +93,6 @@
         padding: 2rem 1.7rem;
     }
 
-    .about-button {
-        width: 100%;
-    }
 
     .about-stats {
         grid-template-columns: 1fr;
