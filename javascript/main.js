@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".custom-navbar .nav-link");
 
     const sections = Array.from(document.querySelectorAll("section[id]"));
-    const homeLink = document.querySelector('.custom-navbar .nav-link[href="index.html"]');
+    const homeLink = document.querySelector('.custom-navbar .nav-link[href="#hero"]');
 
     const sectionLinkMap = {};
     sections.forEach((section) => {
