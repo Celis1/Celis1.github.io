@@ -1,0 +1,123 @@
+.contact-section {
+    background: radial-gradient(circle at top, #020617 0, #020617 25%, #02010a 55%, #000000 100%);
+    color: #e5e7eb;
+}
+
+.contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.contact-heading {
+    font-size: 3rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Card without border, stronger accent glow */
+.contact-card {
+    padding: 2.6rem 2.3rem;
+    border-radius: 22px;
+    background: radial-gradient(circle at top left, rgba(30, 64, 175, 0.25), rgba(15, 23, 42, 0.96));
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.9),
+        0 0 32px rgba(56, 189, 248, 0.18);
+    backdrop-filter: blur(18px);
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: 0.98rem;
+    color: #cbd5f5;
+    line-height: 1.7;
+    margin-bottom: 1.7rem;
+}
+
+/* Primary email CTA */
+.contact-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.9rem;
+    border-radius: 999px;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(135deg, #38bdf8, #a855f7);
+    color: #0b1120;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+    margin-bottom: 1.6rem;
+    transition:
+        transform 0.15s ease-out,
+        box-shadow 0.15s ease-out,
+        opacity 0.15s ease-out;
+}
+
+.contact-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 26px rgba(56, 189, 248, 0.85);
+    opacity: 0.96;
+}
+
+/* Secondary links */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.1rem;
+    margin-bottom: 1.3rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #e5e7eb;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    background: rgba(15, 23, 42, 0.8);
+    transition:
+        background-color 0.15s ease-out,
+        color 0.15s ease-out,
+        border-color 0.15s ease-out;
+}
+
+.contact-link:hover {
+    background-color: rgba(15, 23, 42, 1);
+    border-color: rgba(148, 163, 184, 0.9);
+}
+
+.contact-meta {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 2.2rem 1.7rem;
+    }
+
+    .contact-heading {
+        font-size: 1.4rem;
+        letter-spacing: 0.18em;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        width: 100%;
+        text-align: center;
+    }
+}
